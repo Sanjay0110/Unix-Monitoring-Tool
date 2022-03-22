@@ -28,7 +28,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Local Backup using rsync</h5>
                   <p class="card-text">Backup any files in a directory to some other directory locally using rsync. Make sure that the destination directory where the files will backed up should be existing and you have enough disk space (check disk space using "du -h --summarize &lt;directory-name&gt;").</p>
-                  <button class="btn btn-primary" type="button">Take Backup</button>
+                  <button class="btn btn-primary" type="button" onclick="location.href='rsync.html'">Take Backup</button>
                 </div>
               </div>
         </p>
@@ -39,7 +39,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Process monitor using top</h5>
                   <p class="card-text">The top command is used to display all the running and active real-time processes which is updated regularly. It displays CPU usage, Memory usage, Swap Memory, Cache Size, Buffer Size, Process PID, User, Commands, high memory and cpu utilization of running processes. You can terminate the processes using "kill -9 &lt;Process-Id&gt;".</p>
-                  <button class="btn btn-primary" type="button">Monitor</button>
+                  <button class="btn btn-primary" type="button" type="button" onclick="location.href='top.html'">Monitor</button>
                 </div>
               </div>
         </p>
@@ -50,10 +50,32 @@
                 <div class="card-body">
                   <h5 class="card-title">Get a list of currently logged in users</h5>
                   <p class="card-text">Check which users are currently logged in, since when they are logged in, through which IP address they are logged in, bad login attempts and the historical login data.</p>
-                  <button class="btn btn-primary" type="button">Check</button>
+                  <button class="btn btn-primary" type="button" onclick="location.href='manage_users.html'">Check</button>
                 </div>
               </div>
         </p>
+
+        <p>
+          <div class="card">
+              <h5 class="card-header">Compressed Archive</h5>
+              <div class="card-body">
+                <h5 class="card-title">Make a compressed archive of one or more files or directories</h5>
+                <p class="card-text">This creates a compressed or zipped archive files of one or more specified files or directories. For easier distribution and storage, a single zipped archive has multiple compressed files. You can make a compressed archive using gzip or bzip2 compression</p>
+                <button class="btn btn-primary" type="button" onclick="location.href='compressed_archive.html'">Make</button>
+              </div>
+            </div>
+      </p>
+      <p>
+        <div class="card">
+            <h5 class="card-header">Disk Space</h5>
+            <div class="card-body">
+              <h5 class="card-title">Check Disk Space and mounting details</h5>
+              <p class="card-text">Using this, check the available disk space, partition details along with filesystems of the partitions and the mount point of the partitions.</p>
+              <button class="btn btn-primary" type="button" onclick="location.href='disk.html'">Check</button>
+            </div>
+          </div>
+    </p>
+
 
 
         <h4>Type a command in the text box to run it on the linux machine</h4>
@@ -61,7 +83,7 @@
         <form action="index.html">
             <div class="hstack gap-3">
                 <input class="form-control me-auto" type="text" placeholder="Type a command..." aria-label="Type a command..." id="command-box" required>
-                <button class="btn btn-secondary" type="submit">Execute</button>
+                <button class="btn btn-secondary" type="submit" onclick="location.href='output.html'">Execute</button>
     
                 <div class="vr"></div>
                 <button type="button" class="btn btn-outline-danger"  onclick="clearf()">Clear</button>
